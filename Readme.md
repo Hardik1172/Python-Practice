@@ -16,4 +16,7 @@ questions solved = https://www.w3resource.com/python-exercises/python-functions-
 # 2. how to use image font 
 # Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
 For example : "The quick brown fox jumps over the lazy dog"
-# drawing and searching uml diagrams for flight management system
+# drawing and searching uml diagrams for flight management system . 
+# (https://www.geeksforgeeks.org/class-diagram-for-airport-management-system/),(google images)
+# list splitting functions never work on integer values in list . list values  should be in characters.
+# (like "-".join )

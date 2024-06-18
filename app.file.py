@@ -1,6 +1,3 @@
-def lvariables():
-    x = 1
-    y = 2
-    z = 3
-    str1 = "hi"
-    print(lvariables.__code__.co__nlocals)
+list1 = [1,2,3,4,5,6]
+list2 = '-'.join(list1)
+print(list2)
