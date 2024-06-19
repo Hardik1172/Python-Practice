@@ -1,3 +1,7 @@
-points = [1,2,3,4,5,6,6,6,6,6 ]
-x = points.count(6)
-print(x)
+import pyqrcode
+import png
+from pyqrcode import QRCode
+s = "https://www.geeksforgeeks.org/formatted-string-literals-f-strings-python/"
+url = pyqrcode.create(s)
+url.svg("myqr.svg", scale = 8)
+url.png('myqr.png', scale = 6)

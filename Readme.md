@@ -24,3 +24,6 @@ For example : "The quick brown fox jumps over the lazy dog"
 # 19 June - Learned about python class and object , __init__ functions that is contructors in pytoh
 # truncate() , super() . readline() questions from here https://pynative.com/python-object-oriented-programming-oop-exercise/
 # resources = https://pynative.com/python-object-oriented-programming-oop-exercise/, https://www.geeksforgeeks.org/python-oops-concepts/
+# video lectures from corey schafer playlsit from youtube - https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+
+# generated one qr code using python , resource https://www.geeksforgeeks.org/python-generate-qr-code-using-pyqrcode-module/
