@@ -19,4 +19,8 @@ For example : "The quick brown fox jumps over the lazy dog"
 # drawing and searching uml diagrams for flight management system . 
 # (https://www.geeksforgeeks.org/class-diagram-for-airport-management-system/),(google images)
 # list splitting functions never work on integer values in list . list values  should be in characters.
-# (like "-".join )
+# (like "-".join 
+
+# 19 June - Learned about python class and object , __init__ functions that is contructors in pytoh
+# truncate() , super() . readline() questions from here https://pynative.com/python-object-oriented-programming-oop-exercise/
+# resources = https://pynative.com/python-object-oriented-programming-oop-exercise/, https://www.geeksforgeeks.org/python-oops-concepts/
