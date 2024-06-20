@@ -27,3 +27,8 @@ For example : "The quick brown fox jumps over the lazy dog"
 # video lectures from corey schafer playlsit from youtube - https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
 
 # generated one qr code using python , resource https://www.geeksforgeeks.org/python-generate-qr-code-using-pyqrcode-module/
+
+
+# 20 June update
+# @Staticmethod , __init__ contructor , inhertitance and its types , super() mehtod , @classmehtod , property decorators, operator overloading , Exceptional Handling and other types like using try with else, try with finally , comparison between if__name__ == "__main__"
+# source - youtube video and practice questions code with harry . 
