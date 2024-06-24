@@ -21,14 +21,19 @@ For example : "The quick brown fox jumps over the lazy dog"
 # list splitting functions never work on integer values in list . list values  should be in characters.
 # (like "-".join 
 
-# 19 June - Learned about python class and object , __init__ functions that is contructors in pytoh
-# truncate() , super() . readline() questions from here https://pynative.com/python-object-oriented-programming-oop-exercise/
-# resources = https://pynative.com/python-object-oriented-programming-oop-exercise/, https://www.geeksforgeeks.org/python-oops-concepts/
-# video lectures from corey schafer playlsit from youtube - https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
+# 19 June - 
+Learned about python class and object , __init__ functions that is contructors in pytoh
+truncate() , super() . readline() questions from here (https://pynative.com/python-object-oriented-programming-oop-exercise/)
+[resources] = (https://pynative.com/python-object-oriented-programming-oop-exercise/), (https://www.geeksforgeeks.org/python-oops-concepts/)
+video lectures from corey schafer playlsit from youtube - (https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
 
-# generated one qr code using python , resource https://www.geeksforgeeks.org/python-generate-qr-code-using-pyqrcode-module/
+generated one qr code using python , resource (https://www.geeksforgeeks.org/python-generate-qr-code-using-pyqrcode-module/)
 
 
 # 20 June update
-# @Staticmethod , __init__ contructor , inhertitance and its types , super() mehtod , @classmehtod , property decorators, operator overloading , Exceptional Handling and other types like using try with else, try with finally , comparison between if__name__ == "__main__"
-# source - youtube video and practice questions code with harry . 
+ @Staticmethod , __init__ contructor , inhertitance and its types , super() mehtod , @classmehtod , property decorators, operator overloading , Exceptional Handling and other types like using try with else, try with finally , comparison between if__name__ == "__main__"
+  source - youtube video and practice questions code with harry . 
+
+# 21st June Update
+## DATABASE Sql
+set up of goorm ide, sql basic commands , crud operations, Primary key , Auto_increment , Compsite Primary Key , difference between alter and delete, unique key 
