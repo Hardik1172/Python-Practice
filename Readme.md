@@ -37,3 +37,4 @@ generated one qr code using python , resource (https://www.geeksforgeeks.org/pyt
 # 21st June Update
 ## DATABASE Sql
 set up of goorm ide, sql basic commands , crud operations, Primary key , Auto_increment , Compsite Primary Key , difference between alter and delete, unique key 
+[resouce = sql by sumit mittal] - (https://www.youtube.com/watch?v=qlkS-e5ym1w)
