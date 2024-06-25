@@ -35,3 +35,14 @@ generated one qr code using python , resource (https://www.geeksforgeeks.org/pyt
 ## DATABASE Sql
 set up of goorm ide, sql basic commands , crud operations, Primary key , Auto_increment , Compsite Primary Key , difference between alter and delete, unique key 
 [resouce = sql by sumit mittal] - (https://www.youtube.com/watch?v=qlkS-e5ym1w)
+
+# 24th june
+## SQL
+today foreign key contraint , like keyword , order by , distinct key word ,group by , aggregate functions like min,max, sum , avg 
+[question solved] - (https://datalemur.com/questions/sql-group-by-practice-exercise-candidate-skills)
+
+# 25th june
+## menu driven flight management system
+in this project features added add flight details like , flight number , source and origin, time taken to complete journey .
+passenger details like - name , age , gender , food choice like veg or non veg. 
+problem - how to enter datetime as an user input
