@@ -1,7 +1,7 @@
-# Pythn
+# Python
 ## Day1
 <!-- Basic of python -->
-links = 
+links =  
 
 Basic Git Commands – How to Use Git in a Real Project
 
@@ -45,4 +45,4 @@ today foreign key contraint , like keyword , order by , distinct key word ,group
 ## menu driven flight management system
 in this project features added add flight details like , flight number , source and origin, time taken to complete journey .
 passenger details like - name , age , gender , food choice like veg or non veg. 
-problem - how to enter datetime as an user input
+problem - how to enter datetime as an user input . 
