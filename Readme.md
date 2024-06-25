@@ -43,6 +43,6 @@ today foreign key contraint , like keyword , order by , distinct key word ,group
 
 # 25th june
 ## menu driven flight management system
-in this project features added add flight details like , flight number , source and origin, time taken to complete journey .
+in this project features added add flight details like , flight number , source and origin,trip choice between single side and round, seat choice between economic an business  time taken to complete journey .
 passenger details like - name , age , gender , food choice like veg or non veg. 
-problem - how to enter datetime as an user input . 
+https://github.com/Hardik1172/Python-Practice/blob/main/flightmanagementsystem.py
