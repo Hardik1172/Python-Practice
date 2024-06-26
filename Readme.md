@@ -47,8 +47,9 @@ in this project features added add flight details like , flight number , source 
 passenger details like - name , age , gender , food choice like veg or non veg. 
 https://github.com/Hardik1172/Python-Practice/blob/main/flightmanagementsystem.py
 
-#26th June update
+# 26th June update
 
+## flight management system
 random module in python and its sub modules like randrange, randomint . What is __str__ function
 
 continuation of project on flight management system
