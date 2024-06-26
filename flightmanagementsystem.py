@@ -4,22 +4,22 @@ import string
 
 
 class Flights:
-    def __init__(self):
+    def __init__(self, flight_number, source, destination, capacity):
 
-        flight_number = self.flight_number
-        source = self.source
-        destination = self.destination
-        capacity = self.capacity
+        self.flight_number = flight_number
+        self.source = source
+        self.destination = destination
+        self.capacity = capacity
 
     @staticmethod
 
-    def flight_details(finalbooking=[]):
+    def flight_details():
         flight_number = int(input("flight number"))
         source = str(input("source of flight"))
         destination = str(input("destination of flight"))
         distance = int(input("enter the distance covered"))
         capacity = int(input("enter the capacity of flight"))
-        finalbooking.append(flight_number,source, destination, distance, capacity)
+
 
     @staticmethod
     def flight_date(self):
@@ -28,19 +28,19 @@ class Flights:
         date = int(input("enter the date"))
         datetime.date(year, month, date)
         return datetime.date
+    def __str__(self):
+        return f'The entered flight details are in such way flightnumber- {self.flight_number} , source - {self.source}, destination - {self.destination}, distance between origin and destination - {self.distance}, the capacity of flight is - {self.capacity}'
 
 
 class Passenger:
 
-    def __init__(self):
+    def __init__(self, passenger_number, name, age,gender):
 
-        self.passenger_number = None
-        name = self.name
-        age = self.age
-        passenger_number = self.passenger_number
-        gender = self.gender
-        seatingtype_choice = self.seatingtype_choice
-        tripchoice = self.tripchoice
+
+        self.name = name
+        self.age = age
+        self.passenger_number = passenger_number
+        self.gender = self.gender
 
 
 
@@ -65,13 +65,13 @@ class Passenger:
 
     def seatingchoice(self):
         print("enter the seating type choice  , eco for economic class , busi for business class")
-        seatingtype_choice = str(input("enter the seating type choice"))
+        category = str(input("enter the seating type choice"))
         while True:
-            if seatingtype_choice == "eco":
+            if category == "eco":
                 print("you have choose economic class")
-            elif seatingtype_choice == "busi":
-                (
-                    print("you have choose business class"))
+            elif category == "busi":
+
+                    print("you have choose business class")
             else:
                 print("invalid choice")
 
@@ -89,11 +89,11 @@ class Passenger:
 
         def trip_choice(self):
             print("enter the flight type according to 'Single' for single way trip ,'Round' for round way trip ")
-        tripchoice = str(input("enter trip choice"))
+        trip = str(input("enter trip choice"))
         while True:
-            if tripchoice == "Single":
+            if trip == "Single":
                 print("its a single way trip")
-            elif tripchoice == "Round":
+            elif trip == "Round":
                 print("its a round trip")
             else:
                 print("plz enter valid choices")
@@ -108,6 +108,10 @@ class Passenger:
                     print("non veg")
                 else:
                     print("invalid")
+        def __str__(self):
+            return f'the passenger name is - {self.name}, age is - {self.age}, gender is - {self.gender}, passenger id is {self.randomletter}{self.randomid}, their choice for trip type is {self.trip}, their choice for class of flight for journey is {self.category}, their choice for seat choice is {self.seat}, their choice for food is {self.food_choice}   '
+
+
 def main():
 
 
@@ -120,15 +124,12 @@ def main():
     while True:
         if choice == 1:
             obj1 = Flights
+            obj1.__str__()
         elif choice == 2:
             obj2 = Passenger
+            obj2.__str__()
         else:
             print("you quit the program")
-
-
-
-
-
 
 if __name__ == "__main__":
  main()
