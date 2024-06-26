@@ -48,4 +48,5 @@ passenger details like - name , age , gender , food choice like veg or non veg.
 https://github.com/Hardik1172/Python-Practice/blob/main/flightmanagementsystem.py
 
 26th June update
-random module in python and its sub modules like randrange, 
+random module in python and its sub modules like randrange, randomint . What is __str__ function
+[refrences] = (https://www.scaler.com/topics/python-str/)

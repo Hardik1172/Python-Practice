@@ -3,31 +3,23 @@ import datetime
 import string
 
 
-
-
 class Flights:
+    def __init__(self):
 
-
-
-    def __init__(self, source, ):
-        self.randomletter = randomletter
-        self.flight_number = flight_number
-        self.source = source
-        self.destination = destination
-        self.capacity = capacity
-        self.number = number
-        self.passenger_id = passenger_id
-        self.finalbooking = []
+        flight_number = self.flight_number
+        source = self.source
+        destination = self.destination
+        capacity = self.capacity
 
     @staticmethod
 
-    def flight_details ():
+    def flight_details(finalbooking=[]):
         flight_number = int(input("flight number"))
         source = str(input("source of flight"))
         destination = str(input("destination of flight"))
         distance = int(input("enter the distance covered"))
         capacity = int(input("enter the capacity of flight"))
-        finalbooking.append(flight_number,source,destination, distance, capacity)
+        finalbooking.append(flight_number,source, destination, distance, capacity)
 
     @staticmethod
     def flight_date(self):
@@ -36,6 +28,21 @@ class Flights:
         date = int(input("enter the date"))
         datetime.date(year, month, date)
         return datetime.date
+
+
+class Passenger:
+
+    def __init__(self):
+
+        self.passenger_number = None
+        name = self.name
+        age = self.age
+        passenger_number = self.passenger_number
+        gender = self.gender
+        seatingtype_choice = self.seatingtype_choice
+        tripchoice = self.tripchoice
+
+
 
     @staticmethod
     def passengeradd(self):
@@ -103,7 +110,7 @@ class Flights:
                     print("invalid")
 def main():
 
-    obj = Flights
+
     print("this is menu driven program for flight management system")
     print("enter the choice for performing various operations in this program")
     print("enter 1 if you want top use the program")
@@ -112,8 +119,15 @@ def main():
     choice = int(input("enter the choice "))
     while True:
         if choice == 1:
-            obj.generate()
-            obj.
+            obj1 = Flights
+        elif choice == 2:
+            obj2 = Passenger
+        else:
+            print("you quit the program")
+
+
+
+
 
 
 if __name__ == "__main__":
