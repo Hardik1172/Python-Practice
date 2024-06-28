@@ -59,6 +59,7 @@ class Passenger:
 
     def passenger(self):
         for i in self.passenger_number:
+            self.id = str(input("enter your 5 digits id , can be any"))
             self.name = str(input("enter the name of passenger"))
             self.age = int(input("enter the age of passenger"))
             self.gender = str(input('enter the gender of passenger whether male,female'))
