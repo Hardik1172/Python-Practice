@@ -58,3 +58,6 @@ uml diagram of the project - (https://app.diagrams.net/?tags=%7B%7D&highlight=00
 
 __str__ function - [refrences] = (https://www.scaler.com/topics/python-str/)
 
+# 28th june
+## link list in python 
+implementation of singly link list in python and performing vaious functions like insertion at different location like beginning , end and any index,get method , pop , pop_first , remove , set method 
