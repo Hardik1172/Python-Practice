@@ -61,3 +61,7 @@ __str__ function - [refrences] = (https://www.scaler.com/topics/python-str/)
 # 28th june
 ## link list in python 
 implementation of singly link list in python and performing vaious functions like insertion at different location like beginning , end and any index,get method , pop , pop_first , remove , set method 
+
+# 29 June
+## project work on flight management system . 
+Today work - Automatically generated flight number , distance , and passnger id  . And made a function for allocating seats to the passenger. 
