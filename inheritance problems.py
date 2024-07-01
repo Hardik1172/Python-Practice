@@ -1,6 +1,4 @@
 import random
-
-
 class Flight:
     def __init__(self, flight_number, origin, destination, capacity):
         self.flight_number = flight_number

@@ -1,13 +1,10 @@
 import random
 import string
-
-
-def generate(self):
-    self.randomletter = random.randrange(string.ascii_uppercase)
-    self.randomid = random.randrange(1, 50)
-    print(f"the passenger id is {self.randomletter}{self.randomid}")
-
-
-
+capacity = int(input("enter the amoutn of passengers you want to enter"))
+seats_row = list(string.ascii_uppercase)
+randomrow = random.choice(seats_row)
+seats_number = random.randint(0 , capacity)
+allotedseats = str(randomrow) + str(seats_number)
+print(f" the alotted seat for the passenger is {allotedseats}")
 
 
