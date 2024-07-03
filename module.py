@@ -8,150 +8,293 @@ class Flight:
         self.source = source
         self.destination = destination
         self.capacity = capacity
-        self.distance = distance
         self.passengers = []
-        self.date = None
+        self.flight_type = None
+        self.distance= distance
+        self.flight_date = None
+        self.seats = None
+
 
     @staticmethod
     def create_flight():
-        flight_number = int(input("Enter flight number: "))
         source = input("Enter source of flight: ")
         destination = input("Enter destination of flight: ")
-        distance = int(input("Enter the distance covered: "))
-        capacity = int(input("Enter the capacity of flight: "))
-        return Flight(flight_number, source, destination, capacity, distance)
+        airline_types = ["AIRINDIA", "INDIGO", "BRITISHAIRWAYS", "EMIRATES", "DeltaAirLines", "SouthWestAirLines"]
+        chosen_airline = random.choice(airline_types)
+        random_number = random.randrange(1, 100)
+        flight_number = chosen_airline + str(random_number)
+        print(f"The flight_number is {flight_number}")
+        capacity = int(input("Enter the capacity of flight:"))
+        new_flight = Flight(flight_number, source, destination, capacity, distance = None)
+        new_flight.seats = Seats(new_flight)
+        return new_flight
 
+
+    def choose_flight_type(self):
+
+
+        while True:
+            choice = input("Enter route type (halt for halting flights, direct for direct flights): ")
+            if choice == 'halt':
+
+                while True:
+                    halt_choice = input("enter the location for halt like choose 1 for via dubai , 2 for via Malaysia , 3 for via Iraq")
+                    if halt_choice == '1':
+                        self.halt_choice = "via dubai"
+                        distance = random.randrange(5000, 6000)
+                        print(f"The distance between source and destination is {distance}")
+                        return distance
+                        break
+
+
+                    elif halt_choice == '2':
+                        self.halt_choice = "via Malaysia"
+                        distance = random.randrange(6000, 7500)
+                        print(f"The distance between source and destination is {distance}")
+                        return distance
+                        break
+
+
+                    elif halt_choice == '3':
+                        self.halt_choice = "via Iraq"
+                        distance = random.randrange(7500, 10000)
+                        print(f"The distance between source and destination is {distance}")
+                        return distance
+                        break
+
+
+                    else:
+                        print("enter correct choice plz for halt location")
+                break
+
+            elif choice == 'direct':
+                self.flight_type = "Direct"
+                distance = random.randrange(10000, 11000)
+                print(f"The distance between source and destination is {distance}")
+                break
+            else:
+                print("Wrong choice. Try again.")
+
+
+    # Function to set flight date
     def set_flight_date(self):
         year = int(input("Enter the year: "))
         month = int(input("Enter the month: "))
         day = int(input("Enter the day: "))
-        self.date = datetime.date(year, month, day)
+        self.flight_date = datetime.date(year, month, day)
+
 
     def __str__(self):
-        return (f"Flight {self.flight_number}: {self.source} to {self.destination}, "
-                f"Distance: {self.distance} km, Capacity: {self.capacity}, "
-                f"Date: {self.date}")
+        if self.flight_date:
+            date_info = str(self.flight_date)
+        else:
+            date_info = 'Not set'
+
+        return (f"Flight {self.flight_number}: {self.source} to {self.destination}\n"
+                f"Distance {self.distance}\n"
+                f"Capacity: {self.capacity} passengers\n"
+                f"Date: {date_info}")
+
+
+
+class Seats(Flight):
+    def __init__(self, flight):
+        self.flight = flight
+
+
+    def assign_seat(self):
+        seat_letters = list(string.ascii_uppercase)
+        random_letter = random.choice(seat_letters)
+        random_number = random.randint(0, self.flight.capacity)
+        seat = random_letter + str(random_number)
+        print(f"The assigned seat for the passenger is {seat}")
+        return seat
+
+
 
 class Passenger:
-    def __init__(self, name, age, gender):
+    def __init__(self,numberofpassenger, name, age, gender, passenger_id):
+        self.calculate = None
+        self.b = None
+        self.object1 = None
+        self.numberofpassenger = numberofpassenger
         self.name = name
         self.age = age
         self.gender = gender
-        self.passenger_id = self.generate_id()
+        self.passenger_id = passenger_id
+        self.seating_class = None
         self.seat_type = None
-        self.seat_class = None
         self.trip_type = None
         self.food_choice = None
 
-    @staticmethod
-    def generate_id():
-        return f"{random.choice(string.ascii_uppercase)}{random.randint(1, 50)}"
+
+
+    # Function to choose seating class
+    def choose_seating_class(self):
+        while True:
+            choice = input("Enter seating class (eco for economy, busi for business): ")
+            if choice == 'eco':
+                self.seating_class = "Economy"
+                break
+            elif choice == 'busi':
+                self.seating_class = "Business"
+                break
+            else:
+                print("Wrong choice. Try again.")
+
 
     def choose_seat_type(self):
         while True:
-            seat = input("Enter seat type (w for window, m for middle, a for aisle): ").lower()
-            if seat in ['w', 'm', 'a']:
-                self.seat_type = {'w': 'window', 'm': 'middle', 'a': 'aisle'}[seat]
+            choice = input("Enter seat type (w for window, m for middle, a for aisle): ")
+            if choice == 'w':
+                self.seat_type = "Window"
                 break
-            print("Invalid choice. Please try again.")
-
-    def choose_seat_class(self):
-        while True:
-            category = input("Enter seating class (eco for economy, busi for business): ").lower()
-            if category in ['eco', 'busi']:
-                self.seat_class = 'economy' if category == 'eco' else 'business'
+            elif choice == 'm':
+                self.seat_type = "Middle"
                 break
-            print("Invalid choice. Please try again.")
+            elif choice == 'a':
+                self.seat_type = "Aisle"
+                break
+            else:
+                print("Wrong choice. Try again.")
 
+    # Function to choose trip type
     def choose_trip_type(self):
         while True:
-            trip = input("Enter trip type (Single for one-way, Round for round trip): ").capitalize()
-            if trip in ['Single', 'Round']:
-                self.trip_type = trip
+            choice = input("Enter trip type (Single for one-way, Round for round-trip): ").lower()
+            if choice == 'single':
+                self.trip_type = "One way"
                 break
-            print("Invalid choice. Please try again.")
+            elif choice == 'round':
+                self.trip_type = "RoundWay Trip"
+                break
+            else:
+                print("Wrong choice. Try again.")
 
+    # Function to choose food
     def choose_food(self):
         while True:
-            choice = input("Enter food choice (1 for veg, 2 for non-veg): ")
-            if choice in ['1', '2']:
-                self.food_choice = 'Vegetarian' if choice == '1' else 'Non-vegetarian'
+            choice = input("Enter food choice (Veg for veg, Non-veg for non-veg): ")
+            if choice == 'Veg':
+                self.food_choice = "Vegetarian"
                 break
-            print("Invalid choice. Please try again.")
+            elif choice == 'Non-veg':
+                self.food_choice = "Non-vegetarian"
+                break
+            else:
+                print("Wrong choice. Try again.")
+
 
     def __str__(self):
-        return (f"Passenger {self.passenger_id}: {self.name}, Age: {self.age}, Gender: {self.gender}, "
-                f"Seat: {self.seat_type} ({self.seat_class}), Trip: {self.trip_type}, "
-                f"Food: {self.food_choice}")
+        return (f"Passenger: {self.name}, Age: {self.age}, Gender: {self.gender}\n"
+                f"ID: {self.passenger_id}, Trip: {self.trip_type}\n"
+                f"Class: {self.seating_class}, Seat: {self.seat_type}, Meal: {self.food_choice}\n"
+                f"Assigned Seat: {self.seat_alloted}")
 
-class FlightManagementSystem:
-    def __init__(self):
-        self.flights = []
 
-    def add_flight(self):
-        flight = Flight.create_flight()
-        flight.set_flight_date()
-        self.flights.append(flight)
-        print(f"Flight added successfully: {flight}")
 
-    def book_passenger(self):
-        if not self.flights:
-            print("No flights available. Please add a flight first.")
-            return
 
-        print("Available flights:")
-        for i, flight in enumerate(self.flights):
-            print(f"{i + 1}. {flight}")
 
-        flight_index = int(input("Enter the number of the flight you want to book: ")) - 1
-        if 0 <= flight_index < len(self.flights):
-            flight = self.flights[flight_index]
-            if len(flight.passengers) < flight.capacity:
-                name = input("Enter passenger name: ")
-                age = int(input("Enter passenger age: "))
-                gender = input("Enter passenger gender: ")
-                passenger = Passenger(name, age, gender)
-                passenger.choose_seat_type()
-                passenger.choose_seat_class()
-                passenger.choose_trip_type()
-                passenger.choose_food()
-                flight.passengers.append(passenger)
-                print(f"Booking successful: {passenger}")
-            else:
-                print("Sorry, this flight is full.")
-        else:
-            print("Invalid flight number.")
 
-    def display_flight_details(self):
-        for flight in self.flights:
-            print(f"\n{flight}")
-            print("Passengers:")
-            for passenger in flight.passengers:
-                print(passenger)
+def add_passenger(flight):
+    if len(flight.passengers) < flight.capacity:
+        numberofpassenger = int(input("Enter the number the passengers you want to enter"))
+        name = input("Enter passenger name: ")
+        age = int(input("Enter passenger age: "))
+        gender = input("Enter passenger gender: ")
 
+
+        id_prefixes = ['AB', 'TQ', 'NK', 'PR', 'AL', 'ZL', 'YU']
+        chosen_prefix = random.choice(id_prefixes)
+        random_number = random.randrange(1, 100)
+        passenger_id = chosen_prefix + str(random_number)
+        print(f"The automatically generated passenger id is {passenger_id}")
+
+        new_passenger = Passenger(numberofpassenger,name, age, gender, passenger_id)
+        new_passenger.choose_seating_class()
+        new_passenger.choose_seat_type()
+        new_passenger.choose_trip_type()
+        new_passenger.choose_food()
+
+
+        new_passenger.seat_alloted = flight.seats.assign_seat()
+        # This is
+        b = Cost()
+        new_passenger.final_cost = b.calculate()
+
+        flight.passengers.append(new_passenger)
+        print(f"Passenger {new_passenger.name} added successfully.")
+        return True
+    else:
+        print("Flight is full. Can't add more passengers.")
+        return False
+
+
+# Main program
 def main():
-    system = FlightManagementSystem()
-
+    flights = []
     while True:
-        print("\nFlight Management System Menu:")
-        print("1. Add a new flight")
-        print("2. Book a passenger")
+        print("\nFlight Management System")
+        print("1. Create a new flight")
+        print("2. Add a passenger to a flight")
         print("3. Display flight details")
-        print("4. Exit")
+        print("4. Display passenger details")
+        print("5. Exit")
 
-        choice = input("Enter your choice (1-4): ")
+        choice = input("Enter your choice: ")
 
         if choice == '1':
-            system.add_flight()
-        elif choice == '2':
-            system.book_passenger()
-        elif choice == '3':
-            system.display_flight_details()
-        elif choice == '4':
-            print("Thank you for using the Flight Management System. Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+            new_flight = Flight.create_flight()
+            new_flight.choose_flight_type()
+            new_flight.set_flight_date()
+            flights.append(new_flight)
+            print("Flight created successfully.")
 
+        elif choice == '2':
+            if not flights:
+                print("No flights available. Please create a flight first.")
+            else:
+                for i, flight in enumerate(flights):
+                    print(f"{i + 1}. {flight.flight_number}: {flight.source} to {flight.destination}")
+                try:
+                    flight_index = int(input("Choose a flight (enter number): ")) - 1
+                    if 0 <= flight_index < len(flights):
+                        add_passenger(flights[flight_index])
+                    else:
+                        print("Wrong flight number.")
+                except ValueError:
+                    print("Wrong input. Please enter a number.")
+
+        elif choice == '3':
+            if not flights:
+                print("No flights available.")
+            else:
+                for flight in flights:
+                    print(flight)
+                    print(f"Passengers: {len(flight.passengers)}/{flight.capacity}")
+                    print()
+
+        elif choice == '4':
+            if not flights:
+                print("No flights available.")
+            else:
+                for flight in flights:
+                    print(f"\nFlight {flight.flight_number} passengers:")
+                    if not flight.passengers:
+                        print("No passengers on this flight.")
+                    else:
+                        for passenger in flight.passengers:
+                            print(passenger)
+                            print()
+
+        elif choice == '5':
+            print("Thank you for using the Flight Management System.")
+            break
+
+        else:
+            print("Wrong choice. Please try again.")
+
+
+# Run the main program
 if __name__ == "__main__":
     main()

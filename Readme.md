@@ -62,6 +62,16 @@ __str__ function - [refrences] = (https://www.scaler.com/topics/python-str/)
 ## link list in python 
 implementation of singly link list in python and performing vaious functions like insertion at different location like beginning , end and any index,get method , pop , pop_first , remove , set method 
 
-# 29 June
+# 1st July
 ## project work on flight management system . 
-Today work - Automatically generated flight number , distance , and passnger id  . And made a function for allocating seats to the passenger. 
+Today work - Automatically generated flight number , distance , and passnger id  . And made a function for allocating seats to the passenger.
+random using ranom module https://www.geeksforgeeks.org/python-random-module/
+
+# 2nd JULY
+## project work on flight management system.
+Today work - structuring of project and creating additional class having cost function and merging it  in the main.py file . 
+
+# 3rd JULY 
+## project work on flight management system
+Today Structure - Structuring the project . Learn about json format of data storage. Create .json file to store data for the project and creation of search function to search for the flight .
+
