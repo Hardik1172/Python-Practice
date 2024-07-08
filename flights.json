@@ -1,0 +1,104 @@
+{
+  "flights": [
+    {
+      "id": "FL001",
+      "origin": "New York",
+      "destination": "London",
+      "departure": "2024-07-15 10:00",
+      "arrival": "2024-07-15 22:00",
+      "price": 500,
+      "type": "Direct",
+      "distance": 5567
+    },
+    {
+      "id": "FL002",
+      "origin": "New York",
+      "destination": "London",
+      "departure": "2024-07-15 14:00",
+      "arrival": "2024-07-16 08:00",
+      "price": 450,
+      "type": "1 Stop (Paris)",
+      "distance": 5867
+    },
+    {
+      "id": "FL003",
+      "origin": "London",
+      "destination": "Paris",
+      "departure": "2024-07-16 08:00",
+      "arrival": "2024-07-16 10:30",
+      "price": 200,
+      "type": "Direct",
+      "distance": 344
+    },
+    {
+      "id": "FL004",
+      "origin": "London",
+      "destination": "Paris",
+      "departure": "2024-07-16 12:00",
+      "arrival": "2024-07-16 16:00",
+      "price": 180,
+      "type": "1 Stop (Brussels)",
+      "distance": 420
+    },
+    {
+      "id": "FL005",
+      "origin": "Tokyo",
+      "destination": "Sydney",
+      "departure": "2024-07-17 14:00",
+      "arrival": "2024-07-18 06:00",
+      "price": 800,
+      "type": "Direct",
+      "distance": 7821
+    },
+    {
+      "id": "FL006",
+      "origin": "Tokyo",
+      "destination": "Sydney",
+      "departure": "2024-07-17 10:00",
+      "arrival": "2024-07-18 09:00",
+      "price": 750,
+      "type": "1 Stop (Singapore)",
+      "distance": 8126
+    },
+    {
+      "id": "FL007",
+      "origin": "New York",
+      "destination": "Paris",
+      "departure": "2024-07-18 09:00",
+      "arrival": "2024-07-18 22:30",
+      "price": 600,
+      "type": "Direct",
+      "distance": 5834
+    },
+    {
+      "id": "FL008",
+      "origin": "New York",
+      "destination": "Paris",
+      "departure": "2024-07-18 11:00",
+      "arrival": "2024-07-19 07:00",
+      "price": 550,
+      "type": "1 Stop (London)",
+      "distance": 5911
+    },
+    {
+      "id": "FL009",
+      "origin": "London",
+      "destination": "New York",
+      "departure": "2024-07-19 11:00",
+      "arrival": "2024-07-19 20:00",
+      "price": 550,
+      "type": "Direct",
+      "distance": 5567
+    },
+    {
+      "id": "FL010",
+      "origin": "London",
+      "destination": "New York",
+      "departure": "2024-07-19 09:00",
+      "arrival": "2024-07-19 22:00",
+      "price": 500,
+      "type": "1 Stop (Dublin)",
+      "distance": 5725
+    }
+  ]
+}

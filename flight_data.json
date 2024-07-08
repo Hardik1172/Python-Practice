@@ -1,32 +1,28 @@
 {
-    "flights": [
-        {
-            "flight_number": "AI101",
-            "source": "New York",
-            "destination": "London",
-            "capacity": 200,
-            "distance_covered": 5567,
-            "flight_type": "Direct",
-            "flight_date": "2024-07-15"
-        },
-        {
-            "flight_number": "BA202",
-            "source": "Paris",
-            "destination": "Tokyo",
-            "capacity": 300,
-            "distance_covered": 9713,
-            "flight_type": "Halt",
-            "halt_choice": "via Dubai",
-            "flight_date": "2024-07-20"
-        },
-        {
-            "flight_number": "EK303",
-            "source": "Dubai",
-            "destination": "Sydney",
-            "capacity": 350,
-            "distance_covered": 12065,
-            "flight_type": "Direct",
-            "flight_date": "2024-07-25"
-        }
-    ]
+  "flights": [
+    {
+      "id": "FL001",
+      "origin": "New York",
+      "destination": "London",
+      "departure": "2024-07-15 10:00",
+      "arrival": "2024-07-15 22:00",
+      "price": 500
+    },
+    {
+      "id": "FL002",
+      "origin": "London",
+      "destination": "Paris",
+      "departure": "2024-07-16 08:00",
+      "arrival": "2024-07-16 10:30",
+      "price": 200
+    },
+    {
+      "id": "FL003",
+      "origin": "Tokyo",
+      "destination": "Sydney",
+      "departure": "2024-07-17 14:00",
+      "arrival": "2024-07-18 06:00",
+      "price": 800
+    }
+  ]
 }
