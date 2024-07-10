@@ -1,0 +1,6 @@
+for api calling there is a built-in library in python called requests
+Rest API is an API that uses http request for communication with web services
+
+RestApi - Representational state aPI
+
+End point- It is part of url which tell which part we want to accesss.

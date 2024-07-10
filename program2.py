@@ -120,8 +120,6 @@ class LinkedList:
 
 
 
-
-
 new_linked_list = LinkedList()
 new_linked_list.append(10)
 new_linked_list.append(20)

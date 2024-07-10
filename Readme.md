@@ -1,4 +1,4 @@
-# Python
+**# Python
 ## 3rd June
 Installation of Pycharm and connecting it to github repo .
 
@@ -13,7 +13,48 @@ Basic Git Commands – How to Use Git in a Real Project . basic commands like gi
 
 ## 5th June
 
-###
+###  python built in data structures list , tuples
+its various methods like slicing , reverse, sort , append etc
+[ resources] - (https://www.geeksforgeeks.org/python-lists/)
+               (https://www.w3schools.com/python/python_tuples.asp)
+
+# 6 June
+
+### python built in data structures dictionary , sets
+
+[resources] - (https://www.geeksforgeeks.org/python-dictionary/)
+              (https://www.geeksforgeeks.org/sets-in-python/)
+
+# 7 June
+### python loops and functions
+[resources] - 
+
+# 10 june
+
+### python time modules 
+[resources] - (https://www.geeksforgeeks.org/python-time-module/)
+
+# 11 june
+
+### sqlite database python
+[resources] - https://www.geeksforgeeks.org/python-sqlite/
+
+# 12 june
+
+### oops python - class and objects - self , pass
+[resources] - (https://www.geeksforgeeks.org/python-oops-concepts/)
+
+# 13 June 
+
+### file handling python 
+[resources] - (https://www.geeksforgeeks.org/file-handling-python/)
+
+# 14 june
+### python try and except 
+
+[resources] - (https://www.geeksforgeeks.org/python-try-except/)
+
+
 
 
 
@@ -88,3 +129,31 @@ Today work - structuring of project and creating additional class having cost fu
 Today Structure - Structuring the project . Learn about json format of data storage. Create .json file to store data for the project and creation of search function to search for the flight .
 Learn about Sql joins and done some questions on it  = 
 [questions_link] = (https://www.w3resource.com/sql-exercises/sql-joins-exercises.php)
+
+# 4th july
+### project work on flight management system
+
+# 5th july
+### project work on flight management system  
+
+# 8 th july 
+### about nosql hbase database - its architecture and other functions like crud operations on it**
+
+# 9th July
+### method resolution in python and project work on flight manangement system 
+
+#10 July
+### Python API Calling
+About API , about requests module python , difference between api calling and web scrapping 
+
+
+MY- NEWS API , API KEY - bb07b7cd4fcb4210bacaf50a7856e7ab
+[resources] - (https://www.geeksforgeeks.org/python-api-tutorial-getting-started-with-apis/#working-with-json-data)
+              ()
+
+
+
+
+
+
+Resources - (https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e)
