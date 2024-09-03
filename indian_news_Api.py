@@ -1,10 +1,14 @@
 import requests
 
-url = 'https://www.indiatoday.in/'
+url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&outputsize=full&apikey=demo'
 
 
-response = requests.get(url)
 
+params = {
+             'Time Series (5min)': '2024-07-08 19:15:00'
+}
+
+response = requests.get(url, params = params)
 if response.text == "":
     print("wrong content")
 else:

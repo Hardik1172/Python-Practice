@@ -150,10 +150,143 @@ About API , about requests module python , difference between api calling and we
 MY- NEWS API , API KEY - bb07b7cd4fcb4210bacaf50a7856e7ab
 [resources] - (https://www.geeksforgeeks.org/python-api-tutorial-getting-started-with-apis/#working-with-json-data)
               ()
-
-
-
-
-
-
 Resources - (https://medium.com/@akhilasaineni7/exploring-sparkcontext-and-sparksession-8369e60f658e)
+
+
+# 11 July
+### work on  flight management system . 
+
+# 12 July
+### work on flight management system menu driven
+
+# 15 July
+### work on flight management system menu driven
+
+# 16 July
+### work on flight management system menu driven
+
+# 17 july
+### work on flight management system menu driven
+
+# 18 july
+
+# spark library in python pyspark , installation and basic
+
+
+# 19 july
+### about spark dataframes.
+
+# 21 july
+### about spark transformation , methods  , functions, actions.
+
+# 22 july
+### elaborating projct using django
+### flight management system using django
+
+# 23 july
+### making html files for the project like layout template, index template, about us template
+
+# 24 july
+### making html files for the project
+
+# 25 july
+### css files for the project
+
+# 26 july
+### css files for the project
+
+# 29 july
+### more templates for the project
+
+# 30 july
+### work on flight management system using django
+#### making of csv files used for dataset
+
+# 31 july
+### work on flight management system using django
+### made import_data.py to populate the database . It will allow user to import Airports
+
+# 1 August
+### work on flight management system using django
+### made add flight on function to add flight on user choice with detais like
+### flight no , origin , destination , data and time of it , meal choice , seat capacity etc.
+
+# 2 August
+### work on flight management system using django
+### 
+
+# 5 August
+### work on project solving search issues.
+### modifying view.search and search.html
+
+# 6 August 
+### work on project solving search issues.
+### modifying view.search and search.html and view.book
+
+# 7 August
+### error solving like integrity error in the project
+
+# 8 August
+### creating my bookings for the user to see his bookings whenever he booked a seat.
+
+# 9 August
+### tweaking the function to add new booking  every time user made booking without deleting
+### the old one and making that function
+
+
+
+
+# 12 August
+
+### solving template error in project  .
+
+# 13 August
+### work on flight management solving integrate error and value error . 
+
+# 14 August
+### making of functionality to save recent searches made by the user like upto 5 seaches
+
+# 16 August
+### making of functionality to save recent searches made by the user. made on 
+
+# 19 August
+### tweaking search functionality more to make it compatible with rest of the codes
+
+# 20 August
+###  made registration functionality in project in which there is separate login for 
+### passenger and admin . Admin Login has Admin Dashboard through which admin can add flight
+
+
+# 21 August
+### made login functionality in project in which if a user will login as passenger then
+### there will be specific icon side username like for passenger and admin
+
+# 22 August
+###  made payment function . user can make payment by card in which user has give card number
+### cvv , exp date of card
+
+# 23 August 
+### redirection of booking page to payment page and setting up of booking confirmation template
+
+# 26 August
+### converting my bookings structure to table structure and creation of view details in it .
+### when user will click view_details he will get to see more information about user 
+
+# 27 August
+### creation of cancellation of a seats function in the project
+
+# 28 August
+### making a cancel booking button in my booking in which user has enter passengr id and then click
+### confirm cancellation . This will cancel seat for each user . 
+
+# 29 August 
+### changing of status from confirmed to cancelled in my bookings and vew details for the 
+### particular user. and if user cancelled all seats which are in same row then status converted to
+### all cancelled.
+
+# 30 August
+### while choosing passenger type while booking like if user selects adult or infant 
+### a message should displayed and solving integrity error. 
+
+
+
